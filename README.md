@@ -78,7 +78,7 @@ The language files are located in the individual system folders and __must__ hav
     - In English, the best results can be achieved with the following prompts: `"TEXT" in pilgrim english` or `"TEXT" in shakespearan english`. Examples: `"Your language is now set to [language]!" in pilgrim english` - Result: "Verily, thy tongue is now set to [language]!", `"Your language is now set to [language]!" in shakespearean english`- Result: "Thine language is present set to [language]!".
     - The best German results can be achieved with the prompt `"TEXT" in old medieval German`. Example: `"Your language is now set to [language]!" in Old Medieval German` - Result: "Truly, din sprahe is nu gestelt auf [language]!".
 ##
-### __Text formats__
+### __Text formats (DEPRECATED)__
 
 - **Basic color codes**: Basic Minecraft color codes (e.g. `&6`, `&a`, ...) can be found at https://htmlcolorcodes.com/minecraft-color-codes/. Please note that the `&` symbol must be used instead of the `§` symbol.
 
@@ -176,7 +176,7 @@ Die Sprachdateien liegen in den einzelnen System-Ordneren und __müssen__ den Na
     - Auf Englisch lassen sich die besten Ergebnisse mit den folgenden Prompts erreichen: `"TEXT" in pilgrim english` oder `"TEXT" in shakespearan english`. Beispiele: `"Your language is now set to [language]!" in pilgrim english` - Ergebnis: "Verily, thy tongue is now set to [language]!", `"Your language is now set to [language]!" in shakespearean english`- Ergebnis: "Thine language is present set to [language]!".
     - Die besten Deutschen Ergebnisse sind mit dem Prompt `"TEXT" in  altmittelalterlichem Deutsch` zu erreichen. Beispiel: `"Deine Sprache ist jetzt auf [language] eingestellt!" in  altmittelalterlichem Deutsch` - Ergebnis: "Wahrlich, din sprahe ist nu gestelt auf [language]!".
 ##
-### __Textformate__
+### __Textformate (VERALTET)__
 
 - **Grundlegende Farbcodes**: Grundlegende Minecraft-Farbcodes (z.B. `&6`, `&a`, ...) sind unter https://htmlcolorcodes.com/minecraft-color-codes/ zu finden. Hierbei ist bitte zu beachten, dass das `&`-Symbol anstelle des `§`-Symbols verwendet werden muss.
 
