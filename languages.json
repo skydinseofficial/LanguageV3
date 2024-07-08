@@ -5,12 +5,12 @@
         "en-US":
         {
             "fallback": null,
-            "details.localized":
+            "details.base_language":
             {
                 "name": "English",
                 "country": "United States"
             },
-            "details.base_language":
+            "details.localized":
             {
                 "name": "English",
                 "country": "United States"
@@ -19,12 +19,12 @@
         "en-GB":
         {
             "fallback": "en-US",
-            "details.localized":
+            "details.base_language":
             {
                 "name": "English",
                 "country": "United Kingdom"
             },
-            "details.base_language":
+            "details.localized":
             {
                 "name": "English",
                 "country": "United Kingdom"
@@ -33,197 +33,197 @@
         "en-XX":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Befuddled Speech",
-                "country": "US of A"
-            },
             "details.base_language":
             {
                 "name": "Funny English Language",
                 "country": "Skydinse"
+            },
+            "details.localized":
+            {
+                "name": "Befuddled Speech",
+                "country": "US of A"
             }
         },
         "de-DE":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Deutsch",
-                "country": "Deutschland"
-            },
             "details.base_language":
             {
                 "name": "German",
                 "country": "Germany"
+            },
+            "details.localized":
+            {
+                "name": "Deutsch",
+                "country": "Deutschland"
             }
         },
         "de-AT":
         {
             "fallback": "de-DE",
-            "details.localized":
-            {
-                "name": "Deitsch",
-                "country": "Österreich"
-            },
             "details.base_language":
             {
                 "name": "German",
                 "country": "Austria"
+            },
+            "details.localized":
+            {
+                "name": "Deitsch",
+                "country": "Österreich"
             }
         },
         "de-XX":
         {
             "fallback": "de-DE",
-            "details.localized":
-            {
-                "name": "Wirrwarrspruch",
-                "country": "Alamannenland"
-            },
             "details.base_language":
             {
                 "name": "Funny German Language",
                 "country": "Skydinse"
+            },
+            "details.localized":
+            {
+                "name": "Wirrwarrspruch",
+                "country": "Alamannenland"
             }
         },
         "nl-NL":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Nederlands",
-                "country": "Nederland"
-            },
             "details.base_language":
             {
                 "name": "Dutch",
                 "country": "Netherlands"
+            },
+            "details.localized":
+            {
+                "name": "Nederlands",
+                "country": "Nederland"
             }
         },
         "pt-BR":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Português",
-                "country": "Brasil"
-            },
             "details.base_language":
             {
                 "name": "Portuguese",
                 "country": "Brazil"
+            },
+            "details.localized":
+            {
+                "name": "Português",
+                "country": "Brasil"
             }
         },
         "pt-PT":
         {
             "fallback": "pt-BR",
-            "details.localized":
-            {
-                "name": "Português",
-                "country": "Portugal"
-            },
             "details.base_language":
             {
                 "name": "Portuguese",
+                "country": "Portugal"
+            },
+            "details.localized":
+            {
+                "name": "Português",
                 "country": "Portugal"
             }
         },
         "es-ES":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Español",
-                "country": "España"
-            },
             "details.base_language":
             {
                 "name": "Spanish",
                 "country": "Spain"
+            },
+            "details.localized":
+            {
+                "name": "Español",
+                "country": "España"
             }
         },
         "es-MX":
         {
             "fallback": "es-ES",
-            "details.localized":
-            {
-                "name": "Español",
-                "country": "México"
-            },
             "details.base_language":
             {
                 "name": "Spanish",
                 "country": "Mexico"
+            },
+            "details.localized":
+            {
+                "name": "Español",
+                "country": "México"
             }
         },
         "fr-FR":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Français",
-                "country": "France"
-            },
             "details.base_language":
             {
                 "name": "French",
+                "country": "France"
+            },
+            "details.localized":
+            {
+                "name": "Français",
                 "country": "France"
             }
         },
         "pl-PL":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Polski",
-                "country": "Polska"
-            },
             "details.base_language":
             {
                 "name": "Polish",
                 "country": "Poland"
+            },
+            "details.localized":
+            {
+                "name": "Polski",
+                "country": "Polska"
             }
         },
         "ru-RU":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Русский",
-                "country": "Россия"
-            },
             "details.base_language":
             {
                 "name": "Russian",
                 "country": "Russia"
+            },
+            "details.localized":
+            {
+                "name": "Русский",
+                "country": "Россия"
             }
         },
         "tr-TR":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "Türkçe",
-                "country": "Türkiye"
-            },
             "details.base_language":
             {
                 "name": "Turkish",
+                "country": "Türkiye"
+            },
+            "details.localized":
+            {
+                "name": "Türkçe",
                 "country": "Türkiye"
             }
         },
         "ko-KR":
         {
             "fallback": "en-US",
-            "details.localized":
-            {
-                "name": "한국어",
-                "country": "대한민국"
-            },
             "details.base_language":
             {
                 "name": "Korean",
                 "country": "South Korea"
+            },
+            "details.localized":
+            {
+                "name": "한국어",
+                "country": "대한민국"
             }
         }
     }
