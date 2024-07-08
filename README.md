@@ -5,7 +5,7 @@
   - [File structure](#file-structure)
   - [Language files (lang.json)](#language-files-langjson)
   - [Translation and language rules](#translation-and-language-rules)
-  - [Text formats](#text-formats)
+  - [Text formats](#text-formats-deprecated)
 
 - [**Deutsch (German)**](#deutsch-german):
   - [Werde Übersetzer:in](#werde-übersetzerin)
@@ -13,7 +13,7 @@
   - [Dateistruktur](#dateistruktur)
   - [Sprachdateien (lang.json)](#sprachdateien-langjson)
   - [Übersetzungs- und Sprachregeln](#übersetzungs--und-sprachregeln)
-  - [Textformate](#textformate)
+  - [Textformate](#textformate-veraltet)
 
 ---
 ## English
@@ -56,7 +56,7 @@ The language files are located in the individual system folders and __must__ hav
 ##
 ### __Translation and language rules__
 - **AI**: AI tools (e.g. ChatGPT) for translating texts are __allowed__, but the responsibility for a correct translation always lies with the person.
-- **Text formats**: [Text formats](#text-formats) should **always** be used if there is a reason to do so! For example, if a link appears in a translation, it should also be specified as a link (`<@https://www.example.net/>`). The same applies to all other text formats.
+- **Text formats**: [Text formats](#text-formats-deprecated) should **always** be used if there is a reason to do so! For example, if a link appears in a translation, it should also be specified as a link (`<@https://www.example.net/>`). The same applies to all other text formats.
 - **Placeholders**: Placeholders must be specified in the form `[name]`. If there are several values with the same name, these must be distinguished by `.NUMBER` (e.g. `[name.1]`, `[name.2]`, ...). Placeholder names are always in English and must not be translated. The respective placeholders specified by the developer must be adhered to. **Standard placeholders** are:
   - `[player]`: Name of a player
   - `[link]`: Link to a website
@@ -73,7 +73,7 @@ The language files are located in the individual system folders and __must__ hav
   - Old placeholders are often still in the form "VAR1", "VAR2", ... or "VAL1", "VAL2", ... - These must retain their form so that no problems arise.
 - **Inclusive language**: It is important to use inclusive language in all languages, addressing all people and not excluding anyone. Outdated and discriminatory terms such as "Indian" should not be used. Instead, terms like "Indigenous Peoples" should be used to express respect and appreciation for all cultures. Additionally, where possible, gender-neutral formulations should be used. An example of this in the German language is the use of the gender colon, as seen in "Spieler:in". Excluded from this rule are the languages en-XX and de-XX.
 - **Special rules or remarks for languages**:
-  - **SGA**: The use of the [SGA format](#text-formats) (`<?text>`) only works for all languages that use a Latin alphabet (e.g. English or German). Some letter variations of other languages (e.g. "ç" in Turkish) will be added in the future. Languages that do not use the Latin alphabet at all (e.g. Russian - ru-RU) cannot be transferred to the SGA and will remain in their original form.
+  - **SGA**: The use of the [SGA format](#text-formats-deprecated) (`<?text>`) only works for all languages that use a Latin alphabet (e.g. English or German). Some letter variations of other languages (e.g. "ç" in Turkish) will be added in the future. Languages that do not use the Latin alphabet at all (e.g. Russian - ru-RU) cannot be transferred to the SGA and will remain in their original form.
   - **en-XX and de-XX**: en-XX and de-XX should be meme languages, which consist of old/medieval language and funny phrases - there are no strict rules to follow as with the other languages. Text for en-XX and de-XX is easiest to generate with ChatGPT based on en-US/en-GB and de-DE respectively.
     - In English, the best results can be achieved with the following prompts: `"TEXT" in pilgrim english` or `"TEXT" in shakespearan english`. Examples: `"Your language is now set to [language]!" in pilgrim english` - Result: "Verily, thy tongue is now set to [language]!", `"Your language is now set to [language]!" in shakespearean english`- Result: "Thine language is present set to [language]!".
     - The best German results can be achieved with the prompt `"TEXT" in old medieval German`. Example: `"Your language is now set to [language]!" in Old Medieval German` - Result: "Truly, din sprahe is nu gestelt auf [language]!".
