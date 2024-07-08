@@ -1,0 +1,230 @@
+{
+    "base_language": "en-US",
+    "languages":
+    {
+        "en-US":
+        {
+            "fallback": null,
+            "details.localized":
+            {
+                "name": "English",
+                "country": "United States"
+            },
+            "details.base_language":
+            {
+                "name": "English",
+                "country": "United States"
+            }
+        },
+        "en-GB":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "English",
+                "country": "United Kingdom"
+            },
+            "details.base_language":
+            {
+                "name": "English",
+                "country": "United Kingdom"
+            }
+        },
+        "en-XX":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Befuddled Speech",
+                "country": "US of A"
+            },
+            "details.base_language":
+            {
+                "name": "Funny English Language",
+                "country": "Skydinse"
+            }
+        },
+        "de-DE":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Deutsch",
+                "country": "Deutschland"
+            },
+            "details.base_language":
+            {
+                "name": "German",
+                "country": "Germany"
+            }
+        },
+        "de-AT":
+        {
+            "fallback": "de-DE",
+            "details.localized":
+            {
+                "name": "Deitsch",
+                "country": "Österreich"
+            },
+            "details.base_language":
+            {
+                "name": "German",
+                "country": "Austria"
+            }
+        },
+        "de-XX":
+        {
+            "fallback": "de-DE",
+            "details.localized":
+            {
+                "name": "Wirrwarrspruch",
+                "country": "Alamannenland"
+            },
+            "details.base_language":
+            {
+                "name": "Funny German Language",
+                "country": "Skydinse"
+            }
+        },
+        "nl-NL":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Nederlands",
+                "country": "Nederland"
+            },
+            "details.base_language":
+            {
+                "name": "Dutch",
+                "country": "Netherlands"
+            }
+        },
+        "pt-BR":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Português",
+                "country": "Brasil"
+            },
+            "details.base_language":
+            {
+                "name": "Portuguese",
+                "country": "Brazil"
+            }
+        },
+        "pt-PT":
+        {
+            "fallback": "pt-BR",
+            "details.localized":
+            {
+                "name": "Português",
+                "country": "Portugal"
+            },
+            "details.base_language":
+            {
+                "name": "Portuguese",
+                "country": "Portugal"
+            }
+        },
+        "es-ES":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Español",
+                "country": "España"
+            },
+            "details.base_language":
+            {
+                "name": "Spanish",
+                "country": "Spain"
+            }
+        },
+        "es-MX":
+        {
+            "fallback": "es-ES",
+            "details.localized":
+            {
+                "name": "Español",
+                "country": "México"
+            },
+            "details.base_language":
+            {
+                "name": "Spanish",
+                "country": "Mexico"
+            }
+        },
+        "fr-FR":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Français",
+                "country": "France"
+            },
+            "details.base_language":
+            {
+                "name": "French",
+                "country": "France"
+            }
+        },
+        "pl-PL":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Polski",
+                "country": "Polska"
+            },
+            "details.base_language":
+            {
+                "name": "Polish",
+                "country": "Poland"
+            }
+        },
+        "ru-RU":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Русский",
+                "country": "Россия"
+            },
+            "details.base_language":
+            {
+                "name": "Russian",
+                "country": "Russia"
+            }
+        },
+        "tr-TR":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "Türkçe",
+                "country": "Türkiye"
+            },
+            "details.base_language":
+            {
+                "name": "Turkish",
+                "country": "Türkiye"
+            }
+        },
+        "ko-KR":
+        {
+            "fallback": "en-US",
+            "details.localized":
+            {
+                "name": "한국어",
+                "country": "대한민국"
+            },
+            "details.base_language":
+            {
+                "name": "Korean",
+                "country": "South Korea"
+            }
+        }
+    }
+}

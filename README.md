@@ -27,12 +27,12 @@
 - __Unofficial translator__: If you don't want to be an official translator, you can volunteer here on GitHub and create your [own pull requests](#own-pull-requests). Your pull requests will then be checked by an official translator and adopted if they are okay.
 ##
 ### __languages.json file__
-The [languages.json](https://github.com/skydinseofficial/Language/blob/main/languages.json) file defines the base language (English/en_US) and all available languages with their fallback language as well as their name and the country (including the region, if applicable) in the corresponding language and in English (en_US). The corresponding format can be taken directly from the [file](https://github.com/skydinseofficial/Language/blob/main/languages.json).
+The [languages.json](https://github.com/skydinseofficial/LanguageV3/blob/main/languages.json) file defines the base language (English/en-US) and all available languages with their fallback language as well as their name and the country (including the region, if applicable) in the corresponding language and in English (en-US). The corresponding format can be taken directly from the [file](https://github.com/skydinseofficial/LanguageV3/blob/main/languages.json).
 Explanation of the individual entries:
-- **base_language** (base language): The base language is the language on which the entire language system is based. Texts must __always__ be defined in the base language (English/en_US) so that all other languages can be loaded without errors.
-- **fallback** (fallback language): The fallback language is the language that the system falls back on if a translation is not available in the selected language of a player. For example, if a text is not set in British English (en_GB) but is set in US-American English (en_US), the US-American text is used in place of the British text, as US-American English (de_DE) is the fallback language for British English (de_AT).
-- **details.LANG** (Details): The details "name" (name of the language) and "country" (country and possibly also region) are specified in the corresponding language in order to be able to display the language (e.g. in selection menus).
-- **details.en_US** (details): The details "name" (name of the language) and "country" (country and possibly also region) are also specified in English so that they can be displayed in addition to the details of the language (e.g. in selection menus). This way, every person reading knows which language is meant.
+- **base_language** (base language): The base language is the language on which the entire language system is based. Texts must __always__ be defined in the base language (English/en-US) so that all other languages can be loaded without errors.
+- **fallback** (fallback language): The fallback language is the language that the system falls back on if a translation is not available in the selected language of a player. For example, if a text is not set in British English (en-GB) but is set in US-American English (en-US), the US-American text is used in place of the British text, as US-American English (de-DE) is the fallback language for British English (de-AT).
+- **details.base_language** (details): The details "name" (name of the language) and "country" (country and possibly also region) are also specified in English so that they can be displayed in addition to the details of the language (e.g. in selection menus). This way, every person reading knows which language is meant.
+- **details.localized** (Details): The details "name" (name of the language) and "country" (country and possibly also region) are specified in the corresponding language in order to be able to display the language (e.g. in selection menus).
 ##
 ### __File structure__
 
@@ -42,17 +42,17 @@ Explanation of the individual entries:
 - __Important__: all names of groups and systems are written __in lower case__!
 ##
 ### __Language files (lang.json)__
-The language files are located in the individual system folders and __must__ have the name "lang.json". The format of the messages must also be exactly as specified in the [example file](https://github.com/skydinseofficial/Language/blob/main/groups/example/example-system/lang.json). Above all, it is important to maintain the correct indentation and the structure of the brackets and commas. Otherwise, the file may not be recognized by the language system. Currently available languages are:
-- **English**: Variations: `en_US` (USA), `en_GB` (Great Britain), `en_XX` (meme language)
-- **German**: Variations: `de_DE` (Germany), `de_AT` (Austria), `de_XX` (meme language)
-- **Dutch**: Variations: `nl_NL` (Netherlands)
-- **Portuguese**: Variations: `pt_BR` (Brazil), `pt_PT` (Portugal)
-- **Spanish**: Variations: `es_ES` (Spain), `es_MX` (Mexico)
-- **French**: Variations: `fr_FR` (France)
-- **Polish**: Variations: `pl_PL` (Poland)
-- **Russian**: Variations: `ru_RU` (Russia)
-- **Turkish**: Variations: `tr_TR` (Türkiye)
-- **Korean**: Variations: `ko_KR` (South Korea)
+The language files are located in the individual system folders and __must__ have the name "lang.json". The format of the messages must also be exactly as specified in the [example file](https://github.com/skydinseofficial/LanguageV3/blob/main/groups/example/example-system/lang.json). Above all, it is important to maintain the correct indentation and the structure of the brackets and commas. Otherwise, the file may not be recognized by the language system. Currently available languages are:
+- **English**: Variations: `en-US` (USA), `en-GB` (Great Britain), `en-XX` (meme language)
+- **German**: Variations: `de-DE` (Germany), `de-AT` (Austria), `de-XX` (meme language)
+- **Dutch**: Variations: `nl-NL` (Netherlands)
+- **Portuguese**: Variations: `pt-BR` (Brazil), `pt-PT` (Portugal)
+- **Spanish**: Variations: `es-ES` (Spain), `es-MX` (Mexico)
+- **French**: Variations: `fr-FR` (France)
+- **Polish**: Variations: `pl-PL` (Poland)
+- **Russian**: Variations: `ru-RU` (Russia)
+- **Turkish**: Variations: `tr-TR` (Türkiye)
+- **Korean**: Variations: `ko-KR` (South Korea)
 ##
 ### __Translation and language rules__
 - **AI**: AI tools (e.g. ChatGPT) for translating texts are __allowed__, but the responsibility for a correct translation always lies with the person.
@@ -71,10 +71,10 @@ The language files are located in the individual system folders and __must__ hav
   - `[victim]`: Victim (e.g. in PvP)
   - `[value]`: Any type of value
   - Old placeholders are often still in the form "VAR1", "VAR2", ... or "VAL1", "VAL2", ... - These must retain their form so that no problems arise.
-- **Inclusive language**: It is important to use inclusive language in all languages, addressing all people and not excluding anyone. Outdated and discriminatory terms such as "Indian" should not be used. Instead, terms like "Indigenous Peoples" should be used to express respect and appreciation for all cultures. Additionally, where possible, gender-neutral formulations should be used. An example of this in the German language is the use of the gender colon, as seen in "Spieler:in". Excluded from this rule are the languages en_XX and de_XX.
+- **Inclusive language**: It is important to use inclusive language in all languages, addressing all people and not excluding anyone. Outdated and discriminatory terms such as "Indian" should not be used. Instead, terms like "Indigenous Peoples" should be used to express respect and appreciation for all cultures. Additionally, where possible, gender-neutral formulations should be used. An example of this in the German language is the use of the gender colon, as seen in "Spieler:in". Excluded from this rule are the languages en-XX and de-XX.
 - **Special rules or remarks for languages**:
-  - **SGA**: The use of the [SGA format](#text-formats) (`<?text>`) only works for all languages that use a Latin alphabet (e.g. English or German). Some letter variations of other languages (e.g. "ç" in Turkish) will be added in the future. Languages that do not use the Latin alphabet at all (e.g. Russian - ru_RU) cannot be transferred to the SGA and will remain in their original form.
-  - **en_XX and de_XX**: en_XX and de_XX should be meme languages, which consist of old/medieval language and funny phrases - there are no strict rules to follow as with the other languages. Text for en_XX and de_XX is easiest to generate with ChatGPT based on en_US/en_GB and de_DE respectively.
+  - **SGA**: The use of the [SGA format](#text-formats) (`<?text>`) only works for all languages that use a Latin alphabet (e.g. English or German). Some letter variations of other languages (e.g. "ç" in Turkish) will be added in the future. Languages that do not use the Latin alphabet at all (e.g. Russian - ru-RU) cannot be transferred to the SGA and will remain in their original form.
+  - **en-XX and de-XX**: en-XX and de-XX should be meme languages, which consist of old/medieval language and funny phrases - there are no strict rules to follow as with the other languages. Text for en-XX and de-XX is easiest to generate with ChatGPT based on en-US/en-GB and de-DE respectively.
     - In English, the best results can be achieved with the following prompts: `"TEXT" in pilgrim english` or `"TEXT" in shakespearan english`. Examples: `"Your language is now set to [language]!" in pilgrim english` - Result: "Verily, thy tongue is now set to [language]!", `"Your language is now set to [language]!" in shakespearean english`- Result: "Thine language is present set to [language]!".
     - The best German results can be achieved with the prompt `"TEXT" in old medieval German`. Example: `"Your language is now set to [language]!" in Old Medieval German` - Result: "Truly, din sprahe is nu gestelt auf [language]!".
 ##
@@ -125,12 +125,12 @@ The language files are located in the individual system folders and __must__ hav
 - __Inoffizielle:r Übersetzer:in__: Falls du kein:e offizielle:r Übersetzer:in sein möchtest, kannst du dich auf freiwillig hier auf GitHub engagieren und deine [eigenen pull requests](#eigene-pull-requests) erstellen. Deine pull requests werden dann von einem:r offiziellen Übersetzer:in überprüft und übernommen, wenn sie in Ordnung sind.
 ##
 ### __languages.json-Datei__
-In der Datei [languages.json](https://github.com/skydinseofficial/Language/blob/main/languages.json) werden die Basissprache (Englisch/en_US) und alle verfügbaren Sprachen mit ihrer Fallback-Sprache sowie deren Name und das Land (ggf. auch die Region) in der entsprechenden Sprache und in Englisch (en_US) definiert. Das entsprechende Format kann der [Datei](https://github.com/skydinseofficial/Language/blob/main/languages.json) direkt entnommen werden.
+In der Datei [languages.json](https://github.com/skydinseofficial/LanguageV3/blob/main/languages.json) werden die Basissprache (Englisch/en-US) und alle verfügbaren Sprachen mit ihrer Fallback-Sprache sowie deren Name und das Land (ggf. auch die Region) in der entsprechenden Sprache und in Englisch (en-US) definiert. Das entsprechende Format kann der [Datei](https://github.com/skydinseofficial/LanguageV3/blob/main/languages.json) direkt entnommen werden.
 Erklärung zu den einzelnen Einträgen:
-- **base_language** (Basissprache): Die Basissprache ist die Sprache, auf welcher sich das gesamte Sprachsystem aufbaut. Texte müssen __immer__ in der Bassisprache (Englisch/en_US) definiert sein, damit alle weiteren Sprachen fehlerfrei geladen werden können.
-- **fallback** (Fallback-Sprache): Die Fallback-Sprache ist die Sprache, auf die das System zurück greift, falls eine Übersetzung in der ausgewählten Sprache eines:r Spieler:in nicht verfügbar ist. Ist ein Text beispielsweise in österreichischem Deutsch (de_AT) nicht gesetzt, in Hochdeutsch (de_DE) allerdings schon, wird an Stelle des österreichischen Textes der Hochdeutsche Text verwendet, da Hochdeutsch (de_DE) die Fallback-Sprache für österreichisches Deutsch (de_AT) ist.
-- **details.LANG** (Details): Die Details "name" (Name der Sprache) und "country" (Land ggf. auch Region) werden in der entsprechenden Sprache angegeben, um die Sprache (z.B. in Auswahl-Menüs) anzeigen zu können.
-- **details.en_US** (Details): Die Details "name" (Name der Sprache) und "country" (Land ggf. auch Region) werden ebenfalls in Englisch angegeben, um diese zusätzlich neben den Details der Sprache (z.B. in Auswahl-Menüs) anzeigen zu können. Auf diese Art weiß jede lesende Person welche Sprache gemeint ist.
+- **base_language** (Basissprache): Die Basissprache ist die Sprache, auf welcher sich das gesamte Sprachsystem aufbaut. Texte müssen __immer__ in der Bassisprache (Englisch/en-US) definiert sein, damit alle weiteren Sprachen fehlerfrei geladen werden können.
+- **fallback** (Fallback-Sprache): Die Fallback-Sprache ist die Sprache, auf die das System zurück greift, falls eine Übersetzung in der ausgewählten Sprache eines:r Spieler:in nicht verfügbar ist. Ist ein Text beispielsweise in österreichischem Deutsch (de-AT) nicht gesetzt, in Hochdeutsch (de-DE) allerdings schon, wird an Stelle des österreichischen Textes der Hochdeutsche Text verwendet, da Hochdeutsch (de-DE) die Fallback-Sprache für österreichisches Deutsch (de-AT) ist.
+- **details.base_language** (Details): Die Details "name" (Name der Sprache) und "country" (Land ggf. auch Region) werden ebenfalls in Englisch angegeben, um diese zusätzlich neben den Details der Sprache (z.B. in Auswahl-Menüs) anzeigen zu können. Auf diese Art weiß jede lesende Person welche Sprache gemeint ist.
+- **details.localized** (Details): Die Details "name" (Name der Sprache) und "country" (Land ggf. auch Region) werden in der entsprechenden Sprache angegeben, um die Sprache (z.B. in Auswahl-Menüs) anzeigen zu können.
 ##
 ### __Dateistruktur__
 
@@ -140,17 +140,17 @@ Erklärung zu den einzelnen Einträgen:
 - __Wichtig__: alle Namen von Gruppen und Systemen werden __kleingeschrieben__!
 ##
 ### __Sprachdateien (lang.json)__
-Die Sprachdateien liegen in den einzelnen System-Ordneren und __müssen__ den Namen "lang.json" tragen. Auch das Format der Nachrichten muss genau so sein, wie es in der [Beispiel-Datei](https://github.com/skydinseofficial/Language/blob/main/groups/example/example-system/lang.json) vorgegeben ist. Wichtig ist vor allem, die richtige Einrückung und auf die Struktur der Klammern und Kommas beizubehalten. Andernfalls kann es passieren, dass die Datei vom Sprachsystem nicht erkannt wird. Aktuell verfügbare Sprachen sind:
-- **Englisch**: Variationen: `en_US` (USA), `en_GB` (Großbritannien), `en_XX` (Meme-Sprache)
-- **Deutsch**: Variationen: `de_DE` (Deutschland), `de_AT` (Österreich), `de_XX` (Meme-Sprache)
-- **Niederländisch**: Variationen: `nl_NL` (Niederlande)
-- **Portugiesisch**: Variationen: `pt_BR` (Brasilien), `pt_PT` (Portugal)
-- **Spanisch**: Variationen: `es_ES` (Spanien), `es_MX` (Mexiko)
-- **Französisch**: Variationen: `fr_FR` (Frankreich)
-- **Polnisch**: Variationen: `pl_PL` (Polen)
-- **Russisch**: Variationen: `ru_RU` (Russland)
-- **Türkisch**: Variationen: `tr_TR` (Türkei)
-- **Koreanisch**: Variations: `ko_KR` (Südkorea)
+Die Sprachdateien liegen in den einzelnen System-Ordneren und __müssen__ den Namen "lang.json" tragen. Auch das Format der Nachrichten muss genau so sein, wie es in der [Beispiel-Datei](https://github.com/skydinseofficial/LanguageV3/blob/main/groups/example/example-system/lang.json) vorgegeben ist. Wichtig ist vor allem, die richtige Einrückung und auf die Struktur der Klammern und Kommas beizubehalten. Andernfalls kann es passieren, dass die Datei vom Sprachsystem nicht erkannt wird. Aktuell verfügbare Sprachen sind:
+- **Englisch**: Variationen: `en-US` (USA), `en-GB` (Großbritannien), `en-XX` (Meme-Sprache)
+- **Deutsch**: Variationen: `de-DE` (Deutschland), `de-AT` (Österreich), `de-XX` (Meme-Sprache)
+- **Niederländisch**: Variationen: `nl-NL` (Niederlande)
+- **Portugiesisch**: Variationen: `pt-BR` (Brasilien), `pt-PT` (Portugal)
+- **Spanisch**: Variationen: `es-ES` (Spanien), `es-MX` (Mexiko)
+- **Französisch**: Variationen: `fr-FR` (Frankreich)
+- **Polnisch**: Variationen: `pl-PL` (Polen)
+- **Russisch**: Variationen: `ru-RU` (Russland)
+- **Türkisch**: Variationen: `tr-TR` (Türkei)
+- **Koreanisch**: Variationen: `ko-KR` (Südkorea)
 ##
 ### __Übersetzungs- und Sprachregeln__
 - **KI**: KI-Tools (z.B. ChatGPT) zum Übersetzen von Texten sind __erlaubt__, die Verantwortung einer korrekten Übersetzung liegt aber dennoch immer bei der Person.
@@ -169,10 +169,10 @@ Die Sprachdateien liegen in den einzelnen System-Ordneren und __müssen__ den Na
   - `[victim]`: Opfer (z.B. im PvP)
   - `[value]`: Jede Form von Wert
   - Alte Platzhalter sind oft noch in der Form "VAR1", "VAR2", ... oder "VAL1", "VAL2", ... angegeben, diese müssen ihre Form beibehalten, damit keine Probleme entstehen.
-- **Inklusive Sprache**: Es ist wichtig, möglichst in allen Sprachen eine inklusive Sprache zu verwenden, die alle Menschen anspricht und niemanden ausschließt. Veraltete und diskriminierende Begriffe wie zum Beispiel "Indianer" sollten vermieden werden. Stattdessen sollten Begriffe wie "Indigene Völker" verwendet werden, um Respekt und Wertschätzung für alle Kulturen auszudrücken. Darüber hinaus sollten, wo möglich, geschlechtsneutrale Formulierungen verwendet werden. Ein Beispiel dafür in der deutschen Sprache ist die Verwendung des Gender-Doppelpunkts, wie beispielsweise bei "Spieler:in". Ausgenommen von dieser Regel sind die Sprachen en_XX und de_XX.
+- **Inklusive Sprache**: Es ist wichtig, möglichst in allen Sprachen eine inklusive Sprache zu verwenden, die alle Menschen anspricht und niemanden ausschließt. Veraltete und diskriminierende Begriffe wie zum Beispiel "Indianer" sollten vermieden werden. Stattdessen sollten Begriffe wie "Indigene Völker" verwendet werden, um Respekt und Wertschätzung für alle Kulturen auszudrücken. Darüber hinaus sollten, wo möglich, geschlechtsneutrale Formulierungen verwendet werden. Ein Beispiel dafür in der deutschen Sprache ist die Verwendung des Gender-Doppelpunkts, wie beispielsweise bei "Spieler:in". Ausgenommen von dieser Regel sind die Sprachen en-XX und de-XX.
 - **Besondere Regeln oder Anmerkungen für Sprachen**:
-  - **SGA**: Die Verwendung des [SGA-Formats](#textformate) (`<?text>`) funktioniert nur für alle Sprachen, welche ein lateinisches Alphabet nutzen (z.B. Englisch oder Deutsch). Manche Buchstaben-Variationen anderer Sprachen (z.B. "ç" im türkischen) werden in Zukunft noch hinzugefügt. Sprachen, welche überhaupt nicht auf das lateinische Alphabet zurück greifen, (z.B. Russisch - ru_RU) können nicht ins SGA übertragen werden und verweilen dann in ihrer ursprünglichen Form.
-  - **en_XX und de_XX**: en_XX und de_XX sollen Meme-Sprachen sein, welche aus alter/mittelalterlicher Sprache und lustigen Phrasen bestehen - hierbei sind keine so strikten Regeln zu befolgen wie bei den anderen Sprachen. Text für en_XX und de_XX lässt sich am einfachsten mit ChatGPT auf der Grundlage von en_US/en_GB bzw. de_DE generieren.
+  - **SGA**: Die Verwendung des [SGA-Formats](#textformate) (`<?text>`) funktioniert nur für alle Sprachen, welche ein lateinisches Alphabet nutzen (z.B. Englisch oder Deutsch). Manche Buchstaben-Variationen anderer Sprachen (z.B. "ç" im türkischen) werden in Zukunft noch hinzugefügt. Sprachen, welche überhaupt nicht auf das lateinische Alphabet zurück greifen, (z.B. Russisch - ru-RU) können nicht ins SGA übertragen werden und verweilen dann in ihrer ursprünglichen Form.
+  - **en-XX und de-XX**: en-XX und de-XX sollen Meme-Sprachen sein, welche aus alter/mittelalterlicher Sprache und lustigen Phrasen bestehen - hierbei sind keine so strikten Regeln zu befolgen wie bei den anderen Sprachen. Text für en-XX und de-XX lässt sich am einfachsten mit ChatGPT auf der Grundlage von en-US/en-GB bzw. de-DE generieren.
     - Auf Englisch lassen sich die besten Ergebnisse mit den folgenden Prompts erreichen: `"TEXT" in pilgrim english` oder `"TEXT" in shakespearan english`. Beispiele: `"Your language is now set to [language]!" in pilgrim english` - Ergebnis: "Verily, thy tongue is now set to [language]!", `"Your language is now set to [language]!" in shakespearean english`- Ergebnis: "Thine language is present set to [language]!".
     - Die besten Deutschen Ergebnisse sind mit dem Prompt `"TEXT" in  altmittelalterlichem Deutsch` zu erreichen. Beispiel: `"Deine Sprache ist jetzt auf [language] eingestellt!" in  altmittelalterlichem Deutsch` - Ergebnis: "Wahrlich, din sprahe ist nu gestelt auf [language]!".
 ##
